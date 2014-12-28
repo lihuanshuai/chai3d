@@ -3,6 +3,8 @@
 *.lo
 *.o
 *.obj
+bin/
+!bin/resources/
 
 # Precompiled Headers
 *.gch
@@ -26,3 +28,8 @@
 *.exe
 *.out
 *.app
+
+# Project
+.project
+.cproject
+.settings
