@@ -33,3 +33,7 @@ bin/
 .project
 .cproject
 .settings
+.ropeproject
+
+# Virtualenv
+venv/
