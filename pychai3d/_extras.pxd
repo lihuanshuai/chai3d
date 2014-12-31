@@ -1,3 +1,3 @@
-cdef extern from '../src/extras/CGenericType.h' with nogil:
+cdef extern from '../src/extras/CGenericType.h' nogil:
     cdef cppclass cGenericType:
         pass

@@ -1,3 +1,4 @@
+from libcpp cimport bool
 from _scenegraph cimport cGenericObject, cWorld
 
 
