@@ -92,3 +92,6 @@ target/
 
 # Virtualenv
 venv/
+
+# Cython generated
+pychai3d/*.cpp
