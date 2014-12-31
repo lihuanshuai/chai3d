@@ -5,7 +5,7 @@ from setuptools import setup
 from distutils.core import Extension
 from Cython.Distutils import build_ext
 
-from pychain3d import __version__
+from pychai3d import __version__
 
 with open('README.md') as long_description_file:
     long_description = long_description_file.read()
@@ -22,7 +22,7 @@ ext_modules = [
 setup(
     name='pychai3d',
     version=__version__,
-    desciption='Python Wrapper for CHAI3D',
+    description='Python Wrapper for CHAI3D',
     long_description=long_description,
     author='Li Huanshuai',
     author_email='lihuanshuaiplus AT qq DOT com',
