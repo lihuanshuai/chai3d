@@ -12,10 +12,14 @@ with open('README.md') as long_description_file:
 
 ext_modules = [
     Extension(
-        name='_pychai3d', 
-        sources=['pychai3d/_pychai3d.pyx'],
+        name='pychai3d.scenegraph', 
+        sources=['pychai3d/scenegraph.pyx'],
         language='c++',
-        extra_objects=['lib/lin-x86_64/libchai3d.a']
+        include_dirs=['src/'],
+        define_macros=[('dDOUBLE', None), ('_LINUX', None)],
+        extra_objects=['lib/lin-x86_64/libchai3d.a'],
+        extra_compile_args=["-W", "-Wno-deprecated", "-Wno-unused-parameter"],
+        extra_link_args=["-O3"],
     ),
 ]
 
