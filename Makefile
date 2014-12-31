@@ -20,6 +20,9 @@ SRC_DIR  = $(TOP_DIR)/src
 # include paths
 CXXFLAGS += -I$(SRC_DIR) -I$(DHD_EXT)/include
 
+# relocatable
+CXXFLAGS += -fPIC
+
 # main sources
 SOURCES    = $(shell find $(SRC_DIR) -name '*.cpp')
 
